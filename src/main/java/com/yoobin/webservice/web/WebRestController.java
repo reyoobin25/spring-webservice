@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebRestController {
 
     private PostsService postsService;
-    private PostsRepository postsRepository;
 
     @GetMapping("/hello")
     public String hello() {

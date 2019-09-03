@@ -10,10 +10,10 @@
 
 </head>
 <body>
-<h1>스프링부트로 시작하는 웹 서비스</h1>
+<h1 style="text-align:center; color:greenyellow">스프링부트 웹서비스</h1>
 
 <div class="col-md-12">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#savePostsModal" style="float:right">질문 등록</button>
 </div>
 <br/>
 <br/>
@@ -21,8 +21,9 @@
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
-            <th>게시글번호</th>
+            <th>번호</th>
             <th>제목</th>
+            <th>내용</th>
             <th>작성자</th>
             <th>최종수정일</th>
         </tr>
@@ -32,6 +33,7 @@
             <tr>
                 <td>{{id}}</td>
                 <td>{{title}}</td>
+                <td>{{content}}</td>
                 <td>{{author}}</td>
                 <td>{{modifiedDate}}</td>
             </tr>
