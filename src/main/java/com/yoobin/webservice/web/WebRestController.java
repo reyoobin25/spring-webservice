@@ -1,6 +1,5 @@
 package com.yoobin.webservice.web;
 
-import com.yoobin.webservice.domain.posts.PostsRepository;
 import com.yoobin.webservice.dto.posts.PostsSaveRequestDto;
 import com.yoobin.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
