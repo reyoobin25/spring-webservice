@@ -1,4 +1,8 @@
 language: java
+
+before_script:
+  - chmod +x gradlew
+
 jdk:
   - openjdk8
 
@@ -6,14 +10,12 @@ branches:
   only:
     - master
 
+
 # Travis CI 서버의 Home
 cache:
   directories:
     - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
-
-before_script:
-  - chmod +x gradlew
+  - '$HOME/.gradle'
 
 script: "./gradlew clean build"
 
