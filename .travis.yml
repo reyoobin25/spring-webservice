@@ -1,8 +1,6 @@
 language: java
 jdk:
   - openjdk8
-before_script:
-  - chmod +x gradlew
 
 branches:
   only:
@@ -13,6 +11,9 @@ cache:
   directories:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
+
+before_script:
+  - chmod +x gradlew
 
 script: "./gradlew clean build"
 
