@@ -1,6 +1,5 @@
 language: java
-before_install:
-  - chmod +x gradlew
+
 jdk:
   - openjdk8
 
@@ -15,6 +14,9 @@ cache:
     - '$HOME/.gradle'
 
 script: "./gradlew clean build"
+
+before_install:
+  - chmod +x gradlew
 
 before_deploy:
   - zip -r spring-webservice *
